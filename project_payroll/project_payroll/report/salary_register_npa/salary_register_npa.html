@@ -1,0 +1,117 @@
+{% var report_columns = report.get_columns_for_print(); %}
+
+{% if (filters.letter_head) { %}
+	<div style="margin-bottom: 7px;" class="text-center">
+		{%= frappe.boot.letter_heads[filters.letter_head].header %}
+	</div>
+{% }  %}
+<style>
+    table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+        table-layout: auto;
+		text-align: center !important;
+		border: 1px solid #ddd;
+    }
+	
+    th.header {
+        background-color: #f2f2f2 !important;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: 4px !important;
+		padding-top: 4px !important;
+		border: 1px solid #ddd;
+
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9 !important;
+    }
+	
+	td.row {
+		border: 1px solid #ddd;
+		white-space: nowrap;
+		padding: 4px !important;
+	}
+	
+	.text-center {
+		text-align: center;
+	}
+
+	table .absorbing-column {
+		width: 100%;
+	}
+</style>
+
+<h2 class="text-center" style="color:#009E3D">{%= __(filters.title) %}</h2>
+<h5 class="text-center">{{ __("From") }} {%= filters.from_date %} {{ __("to") }} {%= filters.to_date %}</h5>
+<hr>
+<table class="table">
+	<thead>
+		<tr>
+			{% for(var i=0, l=report_columns.length; i<l; i++) { %}
+				{% if(report_columns[i].label == "Employee Name") { %}
+				
+				<th class="header absorbing-column">{%= report_columns[i].label %}</th>
+				{% } else { %}
+				<th class="header">{%= report_columns[i].label %}</th>
+				{% } %}
+			{% } %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for(var j=0, k=data.length; j<k; j++) { %}
+			{% var row = data[j]; %}
+			<tr>
+				{% for(var i=0, l=report_columns.length; i<l; i++) { %}
+					<td class="row">
+						{% var fieldname = report_columns[i].fieldname; %}
+						{% if (report_columns[i].fieldtype=='Float' && !isNaN(row[fieldname])) { %}
+							{% if (report_columns[i].label.includes("YER") ) { %}
+								{%= format_currency(row[fieldname],"YER") %}
+							
+							{% } else { %}
+								{%= format_currency(row[fieldname],"USD") %}
+							{% } %}
+
+						{% } else { %}
+							{% if (!is_null(row[fieldname])) { %}
+								{%= row[fieldname] %}
+							{% }  %}
+						{% } %}
+					</td>
+				{% } %}
+			</tr>
+		{% } %}
+	</tbody>
+</table>
+
+<div style="margin-top: 20px;">
+	<table style="width: 100%;">
+		<tr>
+			<td style="width: 33%;">
+				Prepared By: Omnya Ahmed<br>
+				HR&Admin Officer
+				<br><br>
+				Signature:________________________<br>
+				Date: {%=  frappe.datetime.now_date()  %}
+			</td>
+			<td style="width: 33%;">
+				Reviewed By: Ahmed Nadeem<br>
+				Designation: Finance Officer
+				<br><br>
+				Signature:________________________<br>
+				Date: {%=  frappe.datetime.now_date()  %}
+			</td>
+			<td style="width: 33%;">
+				Approved By: Antony Wyles<br>
+				Designation: Country Director
+				<br><br>
+				Signature:________________________<br>
+				Date: {%=  frappe.datetime.now_date()  %}
+			</td>
+		</tr>
+	</table>
+</div>
+
+<p class="text-right text-muted">{{ __("Printed On") }} {%= frappe.datetime.str_to_user(frappe.datetime.get_datetime_as_string()) %}</p>

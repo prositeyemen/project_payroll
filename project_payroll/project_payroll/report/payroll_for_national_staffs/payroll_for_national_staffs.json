@@ -1,0 +1,35 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-25 12:24:31.072412",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 7,
+ "is_standard": "Yes",
+ "json": "{\"columns\":[{\"fieldname\":\"employee_number\",\"fieldtype\":\"Data\",\"label\":\"Staff No\",\"insert_after_index\":1,\"link_field\":{\"fieldname\":\"employee\",\"names\":{}},\"doctype\":\"Employee\",\"width\":100,\"id\":\"employee_number\",\"name\":\"Staff No\",\"editable\":false,\"compareValue\":null},{\"label\":\"Employee Name\",\"fieldname\":\"employee_name\",\"fieldtype\":\"Data\",\"width\":140,\"id\":\"employee_name\",\"name\":\"Employee Name\",\"editable\":false,\"compareValue\":null},{\"label\":\"Branch\",\"fieldname\":\"branch\",\"fieldtype\":\"Link\",\"options\":\"Branch\",\"width\":60,\"id\":\"branch\",\"name\":\"Branch\",\"editable\":false,\"compareValue\":null},{\"fieldname\":\"bank_ac_no\",\"fieldtype\":\"Data\",\"label\":\"Bank Account\",\"insert_after_index\":6,\"link_field\":{\"fieldname\":\"employee\",\"names\":{}},\"doctype\":\"Employee\",\"width\":100,\"id\":\"bank_ac_no\",\"name\":\"Bank Account\",\"editable\":false,\"compareValue\":null},{\"label\":\"Department\",\"fieldname\":\"department\",\"fieldtype\":\"Link\",\"options\":\"Department\",\"width\":120,\"id\":\"department\",\"name\":\"Department\",\"editable\":false,\"compareValue\":null},{\"label\":\"Designation\",\"fieldname\":\"designation\",\"fieldtype\":\"Link\",\"options\":\"Designation\",\"width\":120,\"id\":\"designation\",\"name\":\"Designation\",\"editable\":false,\"compareValue\":null},{\"label\":\"Payment Days\",\"fieldname\":\"payment_days\",\"fieldtype\":\"int\",\"width\":60,\"id\":\"payment_days\",\"name\":\"Payment Days\",\"editable\":false,\"compareValue\":null},{\"label\":\"Basic Salary (+) YER\",\"fieldname\":\"basic_salary_(+)_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"basic_salary_(+)_yer\",\"name\":\"Basic Salary (+) YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"Basic Salary (+)\",\"fieldname\":\"basic_salary_(+)\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"basic_salary_(+)\",\"name\":\"Basic Salary (+)\",\"editable\":false,\"compareValue\":null},{\"label\":\"Transport and Appearance Allowance (+) YER\",\"fieldname\":\"transport_and_appearance_allowance_(+)_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"transport_and_appearance_allowance_(+)_yer\",\"name\":\"Transport and Appearance Allowance (+) YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"Trans allowances (+)\",\"fieldname\":\"trans_allowances_(+)\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"trans_allowances_(+)\",\"name\":\"Trans allowances (+)\",\"editable\":false,\"compareValue\":null},{\"label\":\"Shift allowance (+)\",\"fieldname\":\"shift_allowance_(+)\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"shift_allowance_(+)\",\"name\":\"Shift allowance (+)\",\"editable\":false,\"compareValue\":null},{\"label\":\"Appearance allowances\",\"fieldname\":\"appearance_allowances\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"appearance_allowances\",\"name\":\"Appearance allowances\",\"editable\":false,\"compareValue\":null},{\"label\":\"Total Gross YER\",\"fieldname\":\"total_gross_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"total_gross_yer\",\"name\":\"Total Gross YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"S.S Employer share 9%\",\"fieldname\":\"s.s_employer_share_9%\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"s.s_employer_share_9%\",\"name\":\"S.S Employer share 9%\",\"editable\":false,\"compareValue\":null},{\"label\":\"S.S Employee Share 6%\",\"fieldname\":\"s.s_employee_share_6%\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"s.s_employee_share_6%\",\"name\":\"S.S Employee Share 6%\",\"editable\":false,\"compareValue\":null},{\"label\":\"Total insurance 15% YER\",\"fieldname\":\"total_insurance_15%_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"total_insurance_15%_yer\",\"name\":\"Total insurance 15% YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"Total Entitlement YER\",\"fieldname\":\"total_entitlement_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"total_entitlement_yer\",\"name\":\"Total Entitlement YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"Total Entitlement\",\"fieldname\":\"total_entitlement\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"total_entitlement\",\"name\":\"Total Entitlement\",\"editable\":false,\"compareValue\":null},{\"label\":\"Salary Taxable income in YER\",\"fieldname\":\"salary_taxable_income_in_yer\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"salary_taxable_income_in_yer\",\"name\":\"Salary Taxable income in YER\",\"editable\":false,\"compareValue\":null},{\"label\":\"Salary Taxable income\",\"fieldname\":\"salary_taxable_income\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"salary_taxable_income\",\"name\":\"Salary Taxable income\",\"editable\":false,\"compareValue\":null},{\"label\":\"Non Taxable income in USD\",\"fieldname\":\"non_taxable_income_in_usd\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"non_taxable_income_in_usd\",\"name\":\"Non Taxable income in USD\",\"editable\":false,\"compareValue\":null},{\"label\":\"Income Tax $\",\"fieldname\":\"income_tax_$\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"income_tax_$\",\"name\":\"Income Tax $\",\"editable\":false,\"compareValue\":null},{\"label\":\"SS Paid to Staff\",\"fieldname\":\"ss_paid_to_staff\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"ss_paid_to_staff\",\"name\":\"SS Paid to Staff\",\"editable\":false,\"compareValue\":null},{\"label\":\"Net Pay\",\"fieldname\":\"net_pay\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"net_pay\",\"name\":\"Net Pay\",\"editable\":false,\"compareValue\":null}],\"filters\":{\"from_date\":\"2024-02-01\",\"to_date\":\"2024-02-29\",\"currency\":\"USD\",\"company\":\"NPA\",\"docstatus\":\"Draft\"}}",
+ "letter_head": "NPA",
+ "letterhead": null,
+ "modified": "2024-02-25 12:56:19.481362",
+ "modified_by": "Administrator",
+ "module": "Project Payroll",
+ "name": "Payroll for National staffs",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Salary Slip",
+ "reference_report": "Salary Register NPA",
+ "report_name": "Payroll for National staffs",
+ "report_type": "Custom Report",
+ "roles": [
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  }
+ ]
+}

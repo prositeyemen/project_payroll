@@ -1,0 +1,37 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-01-21 14:12:34.204977",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"columns\":[{\"label\":\"Salary Slip ID\",\"fieldname\":\"salary_slip_id\",\"fieldtype\":\"Link\",\"options\":\"Salary Slip\",\"width\":150,\"id\":\"salary_slip_id\",\"name\":\"Salary Slip ID\",\"editable\":false,\"compareValue\":null},{\"label\":\"Employee\",\"fieldname\":\"employee\",\"fieldtype\":\"Link\",\"options\":\"Employee\",\"width\":120,\"id\":\"employee\",\"name\":\"Employee\",\"editable\":false,\"compareValue\":null},{\"label\":\"Employee Name\",\"fieldname\":\"employee_name\",\"fieldtype\":\"Data\",\"width\":140,\"id\":\"employee_name\",\"name\":\"Employee Name\",\"editable\":false,\"compareValue\":null},{\"label\":\"Branch\",\"fieldname\":\"branch\",\"fieldtype\":\"Link\",\"options\":\"Branch\",\"width\":120,\"id\":\"branch\",\"name\":\"Branch\",\"editable\":false,\"compareValue\":null},{\"label\":\"Department\",\"fieldname\":\"department\",\"fieldtype\":\"Link\",\"options\":\"Department\",\"width\":120,\"id\":\"department\",\"name\":\"Department\",\"editable\":false,\"compareValue\":null},{\"label\":\"Designation\",\"fieldname\":\"designation\",\"fieldtype\":\"Link\",\"options\":\"Designation\",\"width\":120,\"id\":\"designation\",\"name\":\"Designation\",\"editable\":false,\"compareValue\":null},{\"label\":\"Start Date\",\"fieldname\":\"start_date\",\"fieldtype\":\"Data\",\"width\":80,\"id\":\"start_date\",\"name\":\"Start Date\",\"editable\":false,\"compareValue\":null},{\"label\":\"End Date\",\"fieldname\":\"end_date\",\"fieldtype\":\"Data\",\"width\":80,\"id\":\"end_date\",\"name\":\"End Date\",\"editable\":false,\"compareValue\":null},{\"label\":\"Gross Pay\",\"fieldname\":\"gross_pay\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"gross_pay\",\"name\":\"Gross Pay\",\"editable\":false,\"compareValue\":null},{\"label\":\"Total Deduction\",\"fieldname\":\"total_deduction\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"total_deduction\",\"name\":\"Total Deduction\",\"editable\":false,\"compareValue\":null},{\"label\":\"Net Pay\",\"fieldname\":\"net_pay\",\"fieldtype\":\"Currency\",\"options\":\"currency\",\"width\":120,\"id\":\"net_pay\",\"name\":\"Net Pay\",\"editable\":false,\"compareValue\":null},{\"label\":\"WRA\",\"fieldname\":\"wra\",\"fieldtype\":\"Percent\",\"width\":120,\"id\":\"wra\",\"name\":\"WRA\",\"editable\":false,\"compareValue\":null},{\"label\":\"WRA Amount\",\"fieldname\":\"wra_amount\",\"fieldtype\":\"Float\",\"width\":120,\"id\":\"wra_amount\",\"name\":\"WRA Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"French\",\"fieldname\":\"french\",\"fieldtype\":\"Percent\",\"width\":120,\"id\":\"french\",\"name\":\"French\",\"editable\":false,\"compareValue\":null},{\"label\":\"French Amount\",\"fieldname\":\"french_amount\",\"fieldtype\":\"Float\",\"width\":120,\"id\":\"french_amount\",\"name\":\"French Amount\",\"editable\":false,\"compareValue\":null}],\"filters\":{\"from_date\":\"2024-01-01\",\"to_date\":\"2024-01-31\",\"currency\":\"USD\",\"company\":\"NPA\",\"docstatus\":\"Draft\",\"salary_structure\":\"Fixed Term Contract\"}}",
+ "letterhead": null,
+ "modified": "2024-01-21 14:14:15.850738",
+ "modified_by": "Administrator",
+ "module": "Project Payroll",
+ "name": "Salaries DistributioncBy Project",
+ "owner": "ziad@gmail.com",
+ "prepared_report": 0,
+ "ref_doctype": "Salary Slip",
+ "reference_report": "Salary Register By Project",
+ "report_name": "Salaries DistributioncBy Project",
+ "report_type": "Custom Report",
+ "roles": [
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "Employee Self Service"
+  }
+ ]
+}
